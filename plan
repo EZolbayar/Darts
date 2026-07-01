@@ -100,7 +100,7 @@
 <body>
 <div class="card">
   <div class="eyebrow">АРГА ХЭМЖЭЭНИЙ ЗОХИОН БАЙГУУЛАЛТ</div>
-  <h1>Тайз ба суудлын байршлын төлөвлөгөө</h1>
+  <h1>Тайз ба суудлын байршил</h1>
   <div class="valance"></div>
 
   <svg viewBox="0 0 1050 540" preserveAspectRatio="xMidYMid meet">
@@ -120,9 +120,9 @@
     <text class="label-caption" x="525" y="132" text-anchor="middle">урт ширээ (тайз)</text>
     <rect class="seat-fill-rect" x="455" y="142" width="140" height="34" rx="3"/>
 
-    <line class="arrow-line" x1="697" y1="115" x2="750" y2="115" marker-end="url(#arrowR)"/>
-    <text class="label-text" x="762" y="109">Дарга, төлөөлөгчдийн</text>
-    <text class="label-text" x="762" y="129">суудал</text>
+    <!--<line class="arrow-line" x1="697" y1="115" x2="750" y2="115" marker-end="url(#arrowR)"/>-->
+    <!--<text class="label-text" x="762" y="109">Дарга, төлөөлөгчдийн</text>-->
+    <!--<text class="label-text" x="762" y="129">суудал</text>-->
 
     <!-- Left side pavilion / VIP -->
     <text class="label-small" x="185" y="222" text-anchor="middle">АСАР</text>
@@ -131,9 +131,9 @@
     <circle class="seat-circle" cx="185" cy="330" r="17"/>
     <circle class="seat-circle" cx="185" cy="385" r="17"/>
 
-    <line class="arrow-line" x1="130" y1="330" x2="80" y2="330" marker-end="url(#arrowL)"/>
-    <text class="label-text" x="20" y="323">ОРЦ</text>
-    <text class="label-text" x="20" y="343">ГАРЦ</text>
+    <line class="arrow-line" x1="130" y1="330" x2="80" y2="330" marker-end="url(#arrowR)"/>
+    <text class="label-text" x="20" y="325">АЧ,</text>
+    <text class="label-text" x="20" y="345">ЗЭЭ НАР</text>
 
     <!-- Right side pavilion / VIP -->
     <text class="label-small" x="865" y="222" text-anchor="middle">АСАР</text>
@@ -142,40 +142,49 @@
     <circle class="seat-circle" cx="865" cy="365" r="17"/>
 
     <line class="arrow-line" x1="920" y1="330" x2="970" y2="330" marker-end="url(#arrowR)"/>
-    <text class="label-text" x="985" y="323">ОРЦ</text>
-    <text class="label-text" x="985" y="343">ГАРЦ</text>
+    <text class="label-text" x="985" y="323">АЧ</text>
+    <text class="label-text" x="985" y="343">ЗЭЭ НАР</text>
 
     <!-- Center seating grid -->
-    <rect class="seat-square" x="425" y="255" width="50" height="50" rx="6"/>
-    <rect class="seat-square" x="500" y="255" width="50" height="50" rx="6"/>
-    <rect class="seat-square" x="575" y="255" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="380" y="260" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="431" y="260" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="481" y="260" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="531" y="260" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="581" y="260" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="636" y="260" width="30" height="30" rx="6"/>
+    
+    <rect class="seat-square" x="380" y="330" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="431" y="330" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="481" y="330" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="531" y="330" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="581" y="330" width="30" height="30" rx="6"/>
+    <rect class="seat-square" x="636" y="330" width="30" height="30" rx="6"/>
 
-    <rect class="seat-square" x="388" y="335" width="50" height="50" rx="6"/>
-    <rect class="seat-square" x="463" y="335" width="50" height="50" rx="6"/>
-    <rect class="seat-square" x="538" y="335" width="50" height="50" rx="6"/>
-    <rect class="seat-square" x="613" y="335" width="50" height="50" rx="6"/>
+    <!--<rect class="seat-square" x="388" y="335" width="50" height="50" rx="6"/>-->
+    <!--<rect class="seat-square" x="463" y="335" width="50" height="50" rx="6"/>-->
+    <!--<rect class="seat-square" x="538" y="335" width="50" height="50" rx="6"/>-->
+    <!--<rect class="seat-square" x="613" y="335" width="50" height="50" rx="6"/>-->
 
     <path class="brace-path" d="M388,400 L480,400 Q525,418 570,400 L663,400"/>
     <line class="brace-path" x1="525" y1="418" x2="525" y2="445"/>
-    <text class="label-display-sm" x="525" y="468" text-anchor="middle">ХҮҮХДИЙН СУУДЛЫН</text>
+    <text class="label-display-sm" x="525" y="468" text-anchor="middle">ХҮҮХДҮҮД СУУХ</text>
     <text class="label-display-sm" x="525" y="489" text-anchor="middle">ШИРЭЭ</text>
   </svg>
 
-  <div class="legend">
-    <div class="legend-item">
-      <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#EFE3C8" stroke="#B8862F" stroke-width="2"/></svg>
-      Хүндэт зочдын суудал (асар)
-    </div>
-    <div class="legend-item">
-      <svg viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" rx="3" fill="#EFE3C8" stroke="#4A5C82" stroke-width="2"/></svg>
-      Хүүхдийн / энгийн суудал
-    </div>
-  </div>
+  <!--<div class="legend">-->
+  <!--  <div class="legend-item">-->
+  <!--    <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#EFE3C8" stroke="#B8862F" stroke-width="2"/></svg>-->
+  <!--    Хүндэт зочдын суудал (асар)-->
+  <!--  </div>-->
+  <!--  <div class="legend-item">-->
+  <!--    <svg viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" rx="3" fill="#EFE3C8" stroke="#4A5C82" stroke-width="2"/></svg>-->
+  <!--    Хүүхдийн / энгийн суудал-->
+  <!--  </div>-->
+  <!--</div>-->
 
-  <div class="note">
-    Тэмдэглэл: эх зурган дээрх зарим жижиг гар бичмэл тэмдэглэгээ («АГ», «заа» гэх мэт) орц/гарцыг илэрхийлж байгаа гэж уншсан болно — танай зурган дээрх бодит утгад тохируулан текстийг хүссэнээрээ засварлаж болно.
-  </div>
+  <!--<div class="note">-->
+  <!--  Тэмдэглэл: эх зурган дээрх зарим жижиг гар бичмэл тэмдэглэгээ («АГ», «заа» гэх мэт) орц/гарцыг илэрхийлж байгаа гэж уншсан болно — танай зурган дээрх бодит утгад тохируулан текстийг хүссэнээрээ засварлаж болно.-->
+  <!--</div>-->
 </div>
 </body>
 </html>
-
