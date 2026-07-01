@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Суудлын байршлын төлөвлөгөө</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF6ED;
+    --card:#FFFDF8;
+    --ink:#232B3D;
+    --indigo:#4A5C82;
+    --gold:#B8862F;
+    --gold-soft:#D9B768;
+    --seat:#EFE3C8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    background-image:radial-gradient(circle at 1px 1px, rgba(74,92,130,0.08) 1px, transparent 0);
+    background-size:22px 22px;
+    font-family:'Montserrat',sans-serif;
+    color:var(--ink);
+    display:flex;
+    justify-content:center;
+    padding:32px 14px 60px;
+  }
+  .card{
+    width:100%;
+    max-width:980px;
+    background:var(--card);
+    border:1px solid #E7DCC2;
+    border-radius:6px;
+    box-shadow:0 18px 40px -22px rgba(35,43,61,0.35);
+    padding:36px 28px 30px;
+  }
+  .eyebrow{
+    font-size:11px;
+    letter-spacing:0.22em;
+    font-weight:600;
+    color:var(--gold);
+    text-align:center;
+    margin-bottom:6px;
+  }
+  h1{
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    font-size:clamp(22px,4vw,30px);
+    text-align:center;
+    margin:0 0 18px;
+    color:var(--ink);
+  }
+  .valance{
+    height:14px;
+    margin:0 auto 26px;
+    max-width:260px;
+    background-image:radial-gradient(circle at 10px 0, transparent 9px, var(--gold-soft) 10px);
+    background-size:20px 14px;
+    background-repeat:repeat-x;
+    opacity:0.85;
+  }
+  svg{display:block;width:100%;height:auto;}
+  .box-outline{fill:var(--card);stroke:var(--indigo);stroke-width:2;}
+  .thin-line{stroke:var(--indigo);stroke-width:1.3;}
+  .bracket-path{stroke:var(--indigo);stroke-width:2.2;fill:none;stroke-linejoin:round;}
+  .brace-path{stroke:var(--indigo);stroke-width:2;fill:none;stroke-linecap:round;}
+  .seat-fill-rect{fill:var(--seat);stroke:var(--indigo);stroke-width:1.3;}
+  .seat-circle{fill:var(--seat);stroke:var(--gold);stroke-width:2;}
+  .seat-square{fill:var(--seat);stroke:var(--indigo);stroke-width:2;}
+  .arrow-line{stroke:var(--gold);stroke-width:2;}
+  .label-display{font-family:'Playfair Display',serif;font-weight:700;font-size:25px;fill:var(--ink);letter-spacing:0.04em;}
+  .label-display-sm{font-family:'Playfair Display',serif;font-weight:700;font-size:16px;fill:var(--ink);letter-spacing:0.06em;}
+  .label-caption{font-size:12.5px;fill:var(--indigo);font-style:italic;}
+  .label-small{font-size:13px;font-weight:600;fill:var(--gold);letter-spacing:0.12em;}
+  .label-text{font-size:13.5px;font-weight:500;fill:var(--ink);}
+  .legend{
+    display:flex;
+    justify-content:center;
+    gap:34px;
+    flex-wrap:wrap;
+    margin-top:22px;
+    padding-top:16px;
+    border-top:1px solid #EEE3CC;
+  }
+  .legend-item{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ink);}
+  .legend-item svg{width:16px;height:16px;flex-shrink:0;}
+  .note{
+    margin-top:18px;
+    font-size:12px;
+    line-height:1.6;
+    color:#7B7363;
+    text-align:center;
+    font-style:italic;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">АРГА ХЭМЖЭЭНИЙ ЗОХИОН БАЙГУУЛАЛТ</div>
+  <h1>Тайз ба суудлын байршлын төлөвлөгөө</h1>
+  <div class="valance"></div>
+
+  <svg viewBox="0 0 1050 540" preserveAspectRatio="xMidYMid meet">
+    <defs>
+      <marker id="arrowR" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="var(--gold)"/>
+      </marker>
+      <marker id="arrowL" markerWidth="10" markerHeight="10" refX="2" refY="5" orient="auto">
+        <path d="M10,0 L0,5 L10,10 Z" fill="var(--gold)"/>
+      </marker>
+    </defs>
+
+    <!-- Main pavilion -->
+    <rect class="box-outline" x="355" y="40" width="340" height="150" rx="4"/>
+    <line class="thin-line" x1="355" y1="112" x2="695" y2="112"/>
+    <text class="label-display" x="525" y="84" text-anchor="middle">ГОЛ АСАР</text>
+    <text class="label-caption" x="525" y="132" text-anchor="middle">урт ширээ (тайз)</text>
+    <rect class="seat-fill-rect" x="455" y="142" width="140" height="34" rx="3"/>
+
+    <line class="arrow-line" x1="697" y1="115" x2="750" y2="115" marker-end="url(#arrowR)"/>
+    <text class="label-text" x="762" y="109">Дарга, төлөөлөгчдийн</text>
+    <text class="label-text" x="762" y="129">суудал</text>
+
+    <!-- Left side pavilion / VIP -->
+    <text class="label-small" x="185" y="222" text-anchor="middle">АСАР</text>
+    <path class="bracket-path" d="M230,235 L140,235 L140,425 L230,425"/>
+    <circle class="seat-circle" cx="185" cy="275" r="17"/>
+    <circle class="seat-circle" cx="185" cy="330" r="17"/>
+    <circle class="seat-circle" cx="185" cy="385" r="17"/>
+
+    <line class="arrow-line" x1="130" y1="330" x2="80" y2="330" marker-end="url(#arrowL)"/>
+    <text class="label-text" x="20" y="323">ОРЦ</text>
+    <text class="label-text" x="20" y="343">ГАРЦ</text>
+
+    <!-- Right side pavilion / VIP -->
+    <text class="label-small" x="865" y="222" text-anchor="middle">АСАР</text>
+    <path class="bracket-path" d="M820,235 L910,235 L910,425 L820,425"/>
+    <circle class="seat-circle" cx="865" cy="295" r="17"/>
+    <circle class="seat-circle" cx="865" cy="365" r="17"/>
+
+    <line class="arrow-line" x1="920" y1="330" x2="970" y2="330" marker-end="url(#arrowR)"/>
+    <text class="label-text" x="985" y="323">ОРЦ</text>
+    <text class="label-text" x="985" y="343">ГАРЦ</text>
+
+    <!-- Center seating grid -->
+    <rect class="seat-square" x="425" y="255" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="500" y="255" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="575" y="255" width="50" height="50" rx="6"/>
+
+    <rect class="seat-square" x="388" y="335" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="463" y="335" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="538" y="335" width="50" height="50" rx="6"/>
+    <rect class="seat-square" x="613" y="335" width="50" height="50" rx="6"/>
+
+    <path class="brace-path" d="M388,400 L480,400 Q525,418 570,400 L663,400"/>
+    <line class="brace-path" x1="525" y1="418" x2="525" y2="445"/>
+    <text class="label-display-sm" x="525" y="468" text-anchor="middle">ХҮҮХДИЙН СУУДЛЫН</text>
+    <text class="label-display-sm" x="525" y="489" text-anchor="middle">ШИРЭЭ</text>
+  </svg>
+
+  <div class="legend">
+    <div class="legend-item">
+      <svg viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="#EFE3C8" stroke="#B8862F" stroke-width="2"/></svg>
+      Хүндэт зочдын суудал (асар)
+    </div>
+    <div class="legend-item">
+      <svg viewBox="0 0 20 20"><rect x="2" y="2" width="16" height="16" rx="3" fill="#EFE3C8" stroke="#4A5C82" stroke-width="2"/></svg>
+      Хүүхдийн / энгийн суудал
+    </div>
+  </div>
+
+  <div class="note">
+    Тэмдэглэл: эх зурган дээрх зарим жижиг гар бичмэл тэмдэглэгээ («АГ», «заа» гэх мэт) орц/гарцыг илэрхийлж байгаа гэж уншсан болно — танай зурган дээрх бодит утгад тохируулан текстийг хүссэнээрээ засварлаж болно.
+  </div>
+</div>
+</body>
+</html>
+
